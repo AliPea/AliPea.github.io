@@ -7,8 +7,6 @@ jQuery(document).ready(function(e) {
         t.preventDefault();
         e("html,body").animate({
             scrollTop: e(this.hash).offset().top
-        }, 1e3)
-    })
+        }, 1e3);
+    });
 });
-
-
