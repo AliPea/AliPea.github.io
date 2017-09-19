@@ -6,12 +6,11 @@ description: A blog about lorem ipsum dolor sit amet
 
 # User settings
 username: Alicia Pearse
-user_description: Learning to code was 
-user_title: Junior Web Developer
+user_description: After graduating with a B.A. in Political Economy from U.C.Berkeley and working in financial services, Alicia has been coding for fun and for work.
+user_title: Web Developer
 email: hello@aliciapearse.com
-twitter_username: https://twitter.com/alicia_pearse
-github_username: https://github.com/AliPea/alipea.github.io
-gplus_username:  lorem_ipsum
+twitter_username: alicia_pearse
+github_username: /AliPea
 
 # Google-analytics
 google-analytics:

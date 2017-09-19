@@ -1,4 +1,4 @@
-$main: #1a222c;
+$main: #272727;
 $sec: #4B5664;
 $purple: #54516A;
 $cut: 768px;
@@ -256,18 +256,27 @@ body {
   margin-top: 100px;
   text-align: center;
   color: #FFF;
-  .love {
-    color: red;
-  }
-  a {
-    text-decoration: none;
-    margin: 0;
+  p{
+    margin-bottom: 50px;
+    a{
     color: #FFF;
     &:hover{
-      color: $sec;
+      color: #3CC47C;
     }
-    &:active {
-      color: $sec;
     }
   }
+  // // .love {
+  // //   color: red;
+  // // }
+  // // a {
+  // //   text-decoration: none;
+  // //   margin: 0;
+  // //   color: #FFF;
+  // //   &:hover{
+  // //     color: $sec;
+  // //   }
+  // //   &:active {
+  // //     color: $sec;
+  // //   }
+  // }
 }
