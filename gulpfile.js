@@ -1,12 +1,13 @@
-var gulp = require('gulp');
-var csso = require('gulp-csso');
-var uglify = require('gulp-uglify');
-var concat = require('gulp-concat');
-var sass = require('gulp-sass');
-var plumber = require('gulp-plumber');
-var cp = require('child_process');
-var imagemin = require('gulp-imagemin');
+var gulp        = require('gulp');
+var csso        = require('gulp-csso');
+var uglify      = require('gulp-uglify');
+var concat      = require('gulp-concat');
+var sass        = require('gulp-sass');
+var plumber     = require('gulp-plumber');
+var cp          = require('child_process');
+var imagemin    = require('gulp-imagemin');
 var browserSync = require('browser-sync');
+var watchSass   = require("gulp-watch-sass");
 
 var jekyllCommand = (/^win/.test(process.platform)) ? 'jekyll.bat' : 'jekyll';
 
@@ -77,3 +78,10 @@ gulp.task('watch', function() {
 });
 
 gulp.task('default', ['js', 'sass', 'browser-sync', 'watch']);
+
+gulp.task("sass:watch", () => watchSass([
+  "./public/**/*.{scss,css}",
+  "!./public/libs/**/*"
+])
+.pipe(sass())
+.pipe(gulp.dest("./public")));

@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>A blog about lorem ipsum dolor sit amet</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
   <meta name="description" content="A blog about lorem ipsum dolor sit amet">
 
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="//cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
   <link rel="stylesheet" href="/assets/css/main.css">
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script src="https://use.fontawesome.com/b5bf1bd49e.js"></script>
+
 </head>
 
-  <body>
-      <div id="particles-js">
+<body>
+  <div id="particles-js">
   <div class="content">
       <h1>
         <span class="site-title">Alicia Pearse</span>
@@ -34,11 +41,12 @@
   <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
 </div>
 
-      <section id="about">
-        <div class="container">
+  <section id="about">
+    <div class="container">
   <div class="user-details">
-    <h3> My Expertise </h3>
-    <p> After graduating with a B.A. in Political Economy from the U.C. Berkeley and working in financial services in London, Alicia began coding for fun and to learn the practical skill of making web applications. Having her roots in Costa Rica and recently working in England, Alicia offers diversity, brings lots of energy and has a true global perspective useful in problem solving beyond the IDE. Alicia is professional, goes above and beyond to meet her deliverables and enjoys being social. In her spare time Alicia likes to read tech blogs, learn new technologies and play the flute. One of Alicia's favorites quotes is, 'If you are the smartest person in the room, then you are in the wrong room.' </p>
+    <h3> About me </h3>
+    <img src="/assets/img/profile.jpg" alt="">
+    <p> After graduating with a B.A. in Political Economy from U.C. Berkeley and while working in financial services in London, I started coding in my spare time. I learned about programming by playing video games since I was young and always enjoyed the learning curve - it was rewarding and fun. I attended General Assembly in London, where I learned to make websites mainly using MEAN stack and Ruby. Through my work experience I have learned also to develop using PHP frameworks. I enjoy working with other smart and driven individuals who inspire me to be better. I go by this quote which sums it up; 'If you are the smartest person in the room, then you are in the wrong room.' </p>
   </div>
   <div class="row user">
     <div class="four columns">
@@ -46,67 +54,97 @@
       <i class="devicon-html5-plain-wordmark"></i>
       <i class="devicon-bootstrap-plain-wordmark colored"></i>
       <i class="devicon-sass-original colored"></i>
-      <p>Mumblecore hexagon kombucha, pitchfork four loko raclette intelligentsia master cleanse.
-        Vinyl XOXO lumbersexual</p>
+      <p>Responsive Web Development</p>
     </div>
     <div class="four columns">
       <h4>Code</h4>
       <i class="devicon-javascript-plain colored"></i>
-      <i class="devicon-react-original-wordmark colored"></i>
+      <i class="devicon-angularjs-plain colored"></i>
       <i class="devicon-nodejs-plain-wordmark"></i>
-      <p>Mumblecore hexagon kombucha, pitchfork four loko raclette intelligentsia master cleanse.
-        Vinyl XOXO lumbersexual</p>
+      <p>Full Stack Web Development <br> Test Driven Development</p>
     </div>
     <div class="four columns">
       <h4>Tools</h4>
       <i class="devicon-git-plain"></i>
       <i class="devicon-gulp-plain colored"></i>
       <i class="devicon-atom-original-wordmark"></i>
-      <p>Mumblecore hexagon kombucha, pitchfork four loko raclette intelligentsia master cleanse.
-        Vinyl XOXO lumbersexual</p>
+      <p>Version control <br> Task and Package Managers</p>
     </div>
   </div>
 </div>
 
-      </section>
-      <section id="projects">
-        <div class="container">
+  </section>
+  <section id="projects">
+    <div class="container">
   <div class="user-details">
     <h3> Featured Projects </h3>
   </div>
   <div class="row user-projects">
     <div class="six columns images">
-      <img alt="mountains" src="/assets/img/mountains.jpg" />
+        <img class="fade" alt="mountains" src="/assets/img/wandergo.jpg" alt="..."/>
     </div>
     <div class="six columns">
-      <h5> Project Title </h5>
-      <li> Featured Skills</li>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <a class="project-link" href="#">Check it out</a>
+      <h5> Wandergo </h5>
+      <ul>
+        <li> Ionic app </li>
+      </ul>
+      <p> Wandergo is a travel app, built with OAuth protocol, integrating Foursquare, Momondo, Google maps API services that enhance the app's capabilities. App launching soon</p>
     </div>
   </div>
   <div class="row user-projects">
-    <div class="six columns">
-      <img alt="mountains" src="/assets/img/skate.jpg" />
+    <div class="six columns images">
+      <h5> Dealbuyer </h5>
+      <ul>
+        <li> Magento 1 </li>
+      </ul>
+      <p> Wandergo is a travel app, built with OAuth protocol, integrating Foursquare, Momondo, Google maps API services that enhance the app's capabilities. App launching soon</p>
+      <a class="project-link" href="https://dealbuyer.com/">Check it out</a>
     </div>
     <div class="six columns">
-      <h5> Project Title </h5>
+      <a href="#" class="thumbnail">
+        <img alt="mountains" src="/assets/img/dealbuyer.png"/>
+      </a>
+    </div>
+  </div>
+  <div class="row user-projects">
+    <div class="six columns images">
+      <a href="#" class="thumbnail">
+        <img alt="mountains" src="/assets/img/flowerbx.png"/>
+      </a>
+    </div>
+    <div class="six columns">
+      <h5> Flowerbx </h5>
       <ul>
-        <li> Featured Skills</li>
+      <li> Magento 2 </li>
       </ul>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <a class="project-link" href="#">Check it out</a>
+      <p> Debugged website for database errors, missing store items, image quality to server timeouts and spining of new server </p>
+      <a class="project-link" href="https://www.flowerbx.com/">Check it out</a>
+    </div>
+  </div>
+  <div class="row user-projects">
+    <div class="six columns images">
+      <h5> Jimmy's Ice Coffee </h5>
+      <ul>
+      <li> Wordpress </li>
+      </ul>
+      <p>  Maintenace of website, content updates and some debugging. </p>
+      <a class="project-link" href="https://www.jimmysicedcoffee.com/">Check it out</a>
+    </div>
+    <div class="six columns">
+      <a href="#" class="thumbnail">
+        <img alt="mountains" src="/assets/img/jimmys.png"/>
+      </a>
     </div>
   </div>
 </div>
 
-      </section>
-      <section id="blog">
-        
+  </section>
+  <section id="blog">
+    
 
-      </section>
-        
-      <footer class="footer">
+  </section>
+  
+  <footer class="footer">
     <p>&copy; <a href="https://www.linkedin.com/in/aliciapearse/">Alicia Pearse</a></p>
     <p><span>&phone;</span>+1(415)342-7279</p>
     <p>San Francisco, California</p>
@@ -127,4 +165,4 @@ ga('send', 'pageview');
 
 
 
-  </body>
+</body>
