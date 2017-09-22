@@ -19,7 +19,13 @@ $f-alt:'Montserrat', sans-serif;
 body {
   margin: 0;
   font-family: $f-body, sans-serif;
+  height: 100%;
 }
+
+html {
+    height: 100%;
+}
+
 
 @-webkit-keyframes pulse {
   from {
@@ -218,7 +224,7 @@ section#about {
 .image_caption {
   cursor: pointer;
   position: relative;
-  overflow: hidden;
+  // overflow: hidden;
   width: 220px;
   height: 220px;
   img{
@@ -286,68 +292,35 @@ section#about {
     }
   }
 }
-// ----- tools -----
+// ----- Technologies -----
 .row.user{
-  .four{
-      i{
-        &:hover{
-          opacity: 0.5;
-        }
-        a{
-          text-decoration: none;
+.four{
+    h4, i {
+      &:hover{
+        opacity: 0.5;
       }
     }
-  }
+    p {
+    text-align: center;
+      }
+    }
 }
+
 
 // ------- Projects------
-th, td{
-  border-bottom: 0;
-  font-family: $f-body;
-  font-weight: normal;
+h4{
   font-family: $f-title;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 400;
 }
-tr{
-  .description{
-    text-align: left;
-  }
-}
-.user-details.projects {
+h3{
   text-align: center;
-  padding: 0px;
+}
+.three {
+  text-align: left;
 }
 
-// section#projects {
-//   padding-top: 0px;
-// }
-//
-// .user-projects {
-//   margin: 100px auto;
-//   .six{
-//     img {
-//       max-width: 80%;
-//       height: auto;
-//       border-radius: 5px;
-//     }
-//     h5 {
-//       margin: 0;
-//     }
-//     li {
-//       color: $main;
-//       font-size: 1.1rem;
-//     }
-//     p {
-//       margin-right: 5px;
-//     }
-//   }
-// }
-//
-// .images {
-//   @media only screen and (min-width: $cut) {
-//     float: right;
-//   }
-// }
-//
 .project-link {
   display: block;
   width: 100px;
@@ -365,8 +338,8 @@ tr{
   background-color 0.3s ease-out,
   border-color 0.3s ease-out;
   &:hover {
-    background-color: $main;
-    border-color: $main;
+    background-color: $purple;
+    border-color: $purple;
     color: #fff;
     transition: color 0.3s ease-in,
     background-color 0.3s ease-in,
@@ -384,38 +357,60 @@ tr{
 
 // Footer
 .footer {
-  text-align: center;
-  background-color: $pink;
+  background-color: #FFF;
+  overflow: hidden;
   .four {
-    padding: 20px;
+    padding: 0px;
     opacity: 0.8;
-    h1 a{
-      text-decoration: none;
-      font-family: $f-body;
-      font-weight: 900;
+    font-family: $f-body;
+    font-weight: 500;
+    margin-bottom: 10px;
+    h1, p {
+      font-family: $f-title;
+      text-align: right;
       color: $main;
-      -webkit-animation: pulse 6.3s infinite;
-      animation: pulse 6.3s infinite;
-    }
-    ul a {
-      text-decoration: none;
-      color: $main;
-      i{
-        padding: 10px;
-        font-size: 30px;
+      a {
+        text-decoration: none;
         color: $main;
-        opacity: 0.8;
-        text-align: left;
+        font-weight: bold;
       }
     }
-
   }
   .row.copy{
     background-color: $main;
     color: #FFF;
     font-size: 12px;
-    p{
-      opacity: 0.6;
+    // overflow: hidden;
+    // p{
+    //   opacity: 0.6;
+    //   margin-bottom: 0px;
+    // }
+    ul, a {
+      text-align: right;
+      text-decoration: none;
+      color: #FFF;
+      padding: 5px;
+      i{
+        -webkit-animation: pulse 4.3s infinite;
+        animation: pulse 4.3s infinite;
+        font-size: 25px;
+        margin-top: 10px;
+        color: #FFF;
+        opacity: 0.8;
+      }
     }
+  }
+}
+ul{
+      margin-bottom: 1rem;
+}
+a {
+  color: $main;
+  text-decoration: none;
+  &:hover {
+    color: $purple;
+  }
+  &:active {
+    color: $main;
   }
 }

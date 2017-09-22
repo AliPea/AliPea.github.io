@@ -1,172 +1,48 @@
 <div class="container">
   <div class="user-details projects">
-    <h3> Featured Projects </h3>
-  </div>
+    <h3>Projects</h3>
+    </div>
+    <div class="row user-projects">
 
-  <table>
-
-    <tr class="row user-projects">
-      <td><img alt="Jimmys" src="{{ "/assets/img/wandergo.jpg" | prepend: site.baseurl }}"style="width:220px; height:200px;"/>
-      </td>
-      <td><img alt="Flowerbx" src="{{ "/assets/img/dealbuyer.png" | prepend: site.baseurl }}"style="width:220px; height:200px;"/>
-      </td>
-      <td><img alt="Dealbuyer" src="{{ "/assets/img/flowerbx.png" | prepend: site.baseurl }}"style="width:220px; height:200px;"/>
-      </td>
-      <td><img alt="Wandergo" src="{{ "/assets/img/jimmys.png" | prepend: site.baseurl }}"style="width:220px; height:200px;"/>
-      </td>
-    </tr>
-
-    <tr>
-      <th>Jimmys</th>
-      <th>Flowerbx</th>
-      <th>Dealbuyer</th>
-      <th>Wandergo</th>
-    </tr>
-
-    <tr class="description">
-      <td>
-        <p> Debugged website for database errors, missing store items, image quality to server timeouts and spining of new server </p>
-        <a class="project-link" href="https://www.jimmysicedcoffee.com/">Check it out</a>
-      </td>
-      <td>
-        <p> Debugged website for database errors, missing store items, image quality to server timeouts and spining of new server </p>
-        <a class="project-link" href="https://www.flowerbx.com/">Check it out</a>
-      </td>
-      <td>
-        <p> Debugged website for database errors, missing store items, image quality to server timeouts and spining of new server</p>
-        <a class="project-link" href="https://dealbuyer.com/">Check it out</a>
-      </td>
-      <td>
-        <p> Debugged website for database errors, missing store items, image quality to server timeouts and spining of new server</p>
+      <div class="three columns images">
+        <img alt="mountains" src="{{ "/assets/img/wandergo.jpg" | prepend: site.baseurl }}" style="width:130px; height:130px; border-radius:100%;"/>
+        <h4> Wandergo </h4>
+        <ul>
+          <li> AngularJS </li>
+        </ul>
+        <p> Mobile app built with Ionic 1. Authorization via Facebook and Foursquare. Searching for flights and hotels via Momondo and booking.com iframes. Explore activities within radius via Foursquare and Google maps. App launching soon</p>
         <a class="project-link" href="https://twitter.com/wandergo_app?lang=en">Check it out</a>
-      </td>
-    </tr>
-  </table>
-
-  <table>
-
-    <tr class="row user-projects">
-      <td><img alt="Novelist" src="{{ "/assets/img/wandergo.jpg" | prepend: site.baseurl }}"style="width:220px; height:200px;"/>
-      </td>
-      <td><img alt="Pintage" src="{{ "/assets/img/dealbuyer.png" | prepend: site.baseurl }}"style="width:220px; height:200px;"/>
-      </td>
-      <td><img alt="Outdoorsy London" src="{{ "/assets/img/flowerbx.png" | prepend: site.baseurl }}"style="width:220px; height:200px;"/>
-      </td>
-      <td><img alt="Mancala" src="{{ "/assets/img/jimmys.png" | prepend: site.baseurl }}"style="width:220px; height:200px;"/>
-      </td>
-    </tr>
-
-    <tr>
-      <th>Novelist</th>
-      <th>Pintage</th>
-      <th>Outdoorsy London</th>
-      <th>Mancala</th>
-    </tr>
-
-    <tr class="description">
-      <td>
-        <p> Debugged website for database errors, missing store items, image quality to server timeouts and spining of new server </p>
-        <a class="project-link" href="https://novelist-wdi.herokuapp.com/">Check it out</a>
-      </td>
-      <td>
-        <p> Debugged website for database errors, missing store items, image quality to server timeouts and spining of new server </p>
-        <a class="project-link" href="https://pintage.herokuapp.com/">Check it out</a>
-      </td>
-      <td>
-        <p> Debugged website for database errors, missing store items, image quality to server timeouts and spining of new server</p>
-        <a class="project-link" href="https://radiant-beach-54059.herokuapp.com/">Check it out</a>
-      </td>
-      <td>
-        <p> Debugged website for database errors, missing store items, image quality to server timeouts and spining of new server</p>
-        <a class="project-link" href="https://limitless-peak-31891.herokuapp.com/">Check it out</a>
-      </td>
-    </tr>
-  </table>
-
-    <!-- <div class="row user-projects">
-
-      <div class="three columns images">
-        <img alt="mountains" src="{{ "/assets/img/jimmys.png" | prepend: site.baseurl }}"style="width:220px; height:200px;"/>
-        <h5> Jimmy's Ice Coffee </h5>
-        <ul>
-        <li> Wordpress </li>
-        </ul>
-        <p>  Maintenace of website, content updates and some debugging. </p>
-        <a class="project-link" href="https://www.jimmysicedcoffee.com/">Check it out</a>
       </div>
 
       <div class="three columns images">
-        <img alt="mountains" src="{{ "/assets/img/flowerbx.png" | prepend: site.baseurl }}" style="width:220px; height:200px;"/>
-        <h5> Flowerbx </h5>
+        <img alt="mountains" src="{{ "/assets/img/flowerbx.png" | prepend: site.baseurl }}" style="width:140px; height:130px;"/>
+        <h4> Flowerbx </h4>
         <ul>
-        <li> Magento 2 </li>
+          <li> Magento 2 </li>
         </ul>
-        <p> Debugged website for database errors, missing store items, image quality to server timeouts and spining of new server </p>
+        <p> Flower delivery service in London. Search the catalogue of amazing flowers to schedule your deliveries. Built on Magento 2, I was in charge of website maintenance, debug across capabilities, update database and enhance design</p>
         <a class="project-link" href="https://www.flowerbx.com/">Check it out</a>
       </div>
 
       <div class="three columns images">
-        <img alt="mountains" src="{{ "/assets/img/dealbuyer.png" | prepend: site.baseurl }}" style="width:220px; height:200px;"/>
-        <h5> Dealbuyer </h5>
+        <img alt="mountains" src="{{ "/assets/img/horse.png" | prepend: site.baseurl }}"style="width:130px; height:130px;"/>
+        <h4> HorseScout</h4>
+        <ul>
+          <li> Wordpress Website </li>
+        </ul>
+        <p>Upload and take photos of your horses. Connect with other equestrian enthusiasts to buy and sell horses. I provided this website and mobile app on Ionic maintenance. Loaded new content, redesigned forms and layout</p>
+        <a class="project-link" href="https://www.horsescout.com/">Check it out</a>
+      </div>
+
+      <div class="three columns images">
+        <img alt="mountains" src="{{ "/assets/img/dealbuyer.png" | prepend: site.baseurl }}" style="width:130px; height:130px;"/>
+        <h4> Dealbuyer </h4>
         <ul>
           <li> Magento 1 </li>
         </ul>
-        <p> Wandergo is a travel app, built with OAuth protocol, integrating Foursquare, Momondo, Google maps API services that enhance the app's capabilities. App launching soon</p>
+        <p>E-commerce site built on Magento 1. Participated in setting up of servers and configuring extension modules. Review of technical specification to organize on sprints all designs and features ahead of the start of the project</p>
         <a class="project-link" href="https://dealbuyer.com/">Check it out</a>
       </div>
 
-      <div class="three columns images">
-        <img class="fade" alt="mountains" src="{{ "/assets/img/wandergo.jpg" | prepend: site.baseurl }}" style="width:220px; height:200px;"/>
-        <h5> Wandergo </h5>
-        <ul>
-          <li> Ionic app </li>
-        </ul>
-        <p> Wandergo is a travel app, built with OAuth protocol, integrating Foursquare, Momondo, Google maps API services that enhance the app's capabilities. App launching soon</p>
-        <a class="project-link" href="https://twitter.com/wandergo_app?lang=en">Check it out</a>
-      </div> -->
-
-  <!-- </div>
-  <div class="row user-projects">
-
-    <div class="three columns images">
-      <img alt="mountains" src="{{ "/assets/img/jimmys.png" | prepend: site.baseurl }}"style="width:220px; height:200px;"/>
-      <h5> Mancala Game </h5>
-      <ul>
-      <li> Vanilla JS </li>
-      </ul>
-      <p>  Maintenace of website, content updates and some debugging. </p>
-      <a class="project-link" href="https://www.jimmysicedcoffee.com/">Check it out</a>
     </div>
-
-    <div class="three columns images">
-      <img alt="mountains" src="{{ "/assets/img/flowerbx.png" | prepend: site.baseurl }}" style="width:220px; height:200px;"/>
-      <h5> Outdoorsy London </h5>
-      <ul>
-      <li> HTML | CSS </li>
-      </ul>
-      <p> Debugged website for database errors, missing store items, image quality to server timeouts and spining of new server </p>
-      <a class="project-link" href="https://www.flowerbx.com/">Check it out</a>
-    </div>
-
-    <div class="three columns images">
-      <img alt="mountains" src="{{ "/assets/img/dealbuyer.png" | prepend: site.baseurl }}" style="width:220px; height:200px;"/>
-      <h5> Pintage </h5>
-      <ul>
-        <li> AngularJS </li>
-      </ul>
-      <p> Wandergo is a travel app, built with OAuth protocol, integrating Foursquare, Momondo, Google maps API services that enhance the app's capabilities. App launching soon</p>
-      <a class="project-link" href="https://dealbuyer.com/">Check it out</a>
-    </div>
-
-    <div class="three columns images">
-      <img class="fade" alt="mountains" src="{{ "/assets/img/wandergo.jpg" | prepend: site.baseurl }}" style="width:220px; height:200px;"/>
-      <h5> Novelist </h5>
-      <ul>
-        <li> MEAN Stack </li>
-      </ul>
-      <p> Wandergo is a travel app, built with OAuth protocol, integrating Foursquare, Momondo, Google maps API services that enhance the app's capabilities. App launching soon</p>
-      <a class="project-link" href="https://twitter.com/wandergo_app?lang=en">Check it out</a>
-    </div> -->
-
-  <!-- </div> -->
-</div>
+  </div>
