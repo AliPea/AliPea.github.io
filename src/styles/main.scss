@@ -208,7 +208,7 @@ section#about {
   text-align: -webkit-center;
 }
 
-.user-details {
+.user-details.about {
   font-size: 16px;
   margin: 0 auto;
   position: relative;
@@ -301,37 +301,53 @@ section#about {
 }
 
 // ------- Projects------
-section#projects {
-  padding-top: 0px;
+th, td{
+  border-bottom: 0;
+  font-family: $f-body;
+  font-weight: normal;
+  font-family: $f-title;
 }
-
-.user-projects {
-  margin: 100px auto;
-  .six{
-    img {
-      max-width: 80%;
-      height: auto;
-      border-radius: 5px;
-    }
-    h5 {
-      margin: 0;
-    }
-    li {
-      color: $main;
-      font-size: 1.1rem;
-    }
-    p {
-      margin-right: 5px;
-    }
+tr{
+  .description{
+    text-align: left;
   }
 }
-
-.images {
-  @media only screen and (min-width: $cut) {
-    float: right;
-  }
+.user-details.projects {
+  text-align: center;
+  padding: 0px;
 }
 
+// section#projects {
+//   padding-top: 0px;
+// }
+//
+// .user-projects {
+//   margin: 100px auto;
+//   .six{
+//     img {
+//       max-width: 80%;
+//       height: auto;
+//       border-radius: 5px;
+//     }
+//     h5 {
+//       margin: 0;
+//     }
+//     li {
+//       color: $main;
+//       font-size: 1.1rem;
+//     }
+//     p {
+//       margin-right: 5px;
+//     }
+//   }
+// }
+//
+// .images {
+//   @media only screen and (min-width: $cut) {
+//     float: right;
+//   }
+// }
+//
 .project-link {
   display: block;
   width: 100px;
@@ -349,16 +365,16 @@ section#projects {
   background-color 0.3s ease-out,
   border-color 0.3s ease-out;
   &:hover {
-    background-color: $purple;
-    border-color: $purple;
+    background-color: $main;
+    border-color: $main;
     color: #fff;
     transition: color 0.3s ease-in,
     background-color 0.3s ease-in,
     border-color 0.3s ease-in;
   }
   &:active {
-    background-color: $purple;
-    border-color: $purple;
+    background-color: $main;
+    border-color: $main;
     color: #fff;
     transition: color 0.3s ease-in,
     background-color 0.3s ease-in,
@@ -369,7 +385,7 @@ section#projects {
 // Footer
 .footer {
   text-align: center;
-  // background-color: $pink;
+  background-color: $pink;
   .four {
     padding: 20px;
     opacity: 0.8;
