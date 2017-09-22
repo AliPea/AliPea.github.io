@@ -2,12 +2,19 @@
 $main: #272727;
 $sec: #4B5664;
 $purple: #54516A;
+$pink: #EEE5E9;
 $cut: 768px;
 $f-title:'Roboto', sans-serif;
 $f-body:'Open Sans', sans-serif;
 $f-alt:'Montserrat', sans-serif;
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
 
 body {
   margin: 0;
@@ -41,30 +48,21 @@ body {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
     filter: alpha(opacity=40);
     opacity: .4;
-    top: 0
+    top: 0;
   }
   50% {
     -ms-filter: none;
     -webkit-filter: none;
     filter: none;
     opacity: 1;
-    top: -10px
+    top: -10px;
   }
   to {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
     filter: alpha(opacity=40);
     opacity: .4;
-    top: 0
+    top: 0;
   }
-}
-
-
-section#about {
-  padding-top: 10px;
-}
-section#projects {
-  background-color: #EEE5E9;
-  padding-top: 10px;
 }
 
 #particles-js {
@@ -196,37 +194,116 @@ section#projects {
   font-size: 60px;
   p {
     font-size: 16px;
+    margin-bottom: 0px;
+    text-align: center;
   }
   @media only screen and (min-width: $cut) {
     font-size: 75px;
   }
 }
 
-//About me section
+//-------About me---------
+section#about {
+  padding-top: 10px;
+  text-align: -webkit-center;
+}
+
 .user-details {
-  text-align: center;
   font-size: 16px;
-  margin: 50px auto;
-  img {
+  margin: 0 auto;
+  position: relative;
+  padding: 20px;
+}
+
+.image_caption {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  width: 220px;
+  height: 220px;
+  img{
+    border-radius: 100%;
     -ms-transform: rotate(90deg); /* IE 9 */
     -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
     transform: rotate(90deg);
-    border-radius: 100%;
-    border-style: solid;
-    border-width: 0px;
-    height: 200px;
-    width: 210px;
-  }
-  p {
-    text-align: left;
   }
 }
-.four.columns{
-  h4{      &:hover{
-    text-decoration: underline;
-  }}
+.caption_box{
+  width: 220px;
+  height: 220px;
+  border-radius: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 12px;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+.image_caption:hover .caption_box {
+  visibility: visible;
+  opacity: 1;
+  position: absolute;
+}
+.caption {
+  transition: .2s;
+  transform: translateY(1em);
+  margin-bottom: 0px;
 }
 
+.image_caption:hover .caption {
+  transform: translateY(0);
+}
+
+.underline {
+  text-align: justify;
+  max-width:960px;
+  width:100%;
+  padding: 10px 0px;
+  a{
+    transition:all 1s linear;
+    display:inline;
+    color:$main;
+    text-decoration:none;
+    font-weight:400;
+    padding-bottom:5px;
+    background: linear-gradient(to right, rgba(60,196,124,1) 0%,rgba(233,200,147,1) 98%);
+    background-size:0px 2px;
+    background-repeat: no-repeat;
+    background-position:left 85%;
+    text-shadow:0;
+    &:hover{
+      background-size:100% 2px;
+    }
+  }
+}
+// ----- tools -----
+.row.user{
+  .four{
+      i{
+        &:hover{
+          opacity: 0.5;
+        }
+        a{
+          text-decoration: none;
+      }
+    }
+  }
+}
+
+// ------- Projects------
+section#projects {
+  padding-top: 0px;
+}
 
 .user-projects {
   margin: 100px auto;
@@ -289,32 +366,40 @@ section#projects {
   }
 }
 
+// Footer
 .footer {
-  background: $main;
-  padding: 10px 0;
   text-align: center;
-  color: #FFF;
-  p{
-    margin-bottom: 15px;
-    a{
-      color: #FFF;
-      &:hover{
-        color: #3CC47C;
+  // background-color: $pink;
+  .four {
+    padding: 20px;
+    opacity: 0.8;
+    h1 a{
+      text-decoration: none;
+      font-family: $f-body;
+      font-weight: 900;
+      color: $main;
+      -webkit-animation: pulse 6.3s infinite;
+      animation: pulse 6.3s infinite;
+    }
+    ul a {
+      text-decoration: none;
+      color: $main;
+      i{
+        padding: 10px;
+        font-size: 30px;
+        color: $main;
+        opacity: 0.8;
+        text-align: left;
       }
     }
+
   }
-  // // .love {
-  // //   color: red;
-  // // }
-  // // a {
-  // //   text-decoration: none;
-  // //   margin: 0;
-  // //   color: #FFF;
-  // //   &:hover{
-  // //     color: $sec;
-  // //   }
-  // //   &:active {
-  // //     color: $sec;
-  // //   }
-  // }
+  .row.copy{
+    background-color: $main;
+    color: #FFF;
+    font-size: 12px;
+    p{
+      opacity: 0.6;
+    }
+  }
 }

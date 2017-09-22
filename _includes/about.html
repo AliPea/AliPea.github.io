@@ -1,16 +1,25 @@
 <div class="container">
   <div class="user-details">
-    <h3> About me </h3>
-    <img src="{{ "/assets/img/profile.jpg" | prepend: site.baseurl }}" alt="">
-    <p> {{site.user_description}} </p>
+    <h3> Hi, I'm Ali. </h3>
+    <div class="image_caption">
+      <img src="{{ "/assets/img/profile.jpg" | prepend: site.baseurl }}" style="width: 220px; height: 220px;">
+      <div class="caption_box">
+        <p class="caption">Lake Champex, Switzerland</p>
+      </div>
+    </div>
   </div>
+  <div class=" underline"><a> {{site.user_description}} </a></div>
+</div>
+<div class="container">
   <div class="row user">
     <div class="four columns">
       <h4>Design</h4>
-      <i class="devicon-html5-plain-wordmark"></i>
+      <i class="devicon-html5-plain-wordmark"><a href="https://getbootstrap.com/docs/3.3/"></a></i>
       <i class="devicon-bootstrap-plain-wordmark colored"></i>
       <i class="devicon-sass-original colored"></i>
       <p>Responsive Web Development</p>
+      <p>PSDs to reponsive website</p>
+      <p>Photoshop, svgs, CSS animations, multiple frameworks!</p>
     </div>
     <div class="four columns">
       <h4>Code</h4>
@@ -27,4 +36,5 @@
       <p>Version control <br> Task and Package Managers</p>
     </div>
   </div>
+  <hr>
 </div>
