@@ -221,56 +221,17 @@ section#about {
   padding: 20px;
 }
 
+
+
 .image_caption {
   cursor: pointer;
   position: relative;
   // overflow: hidden;
   width: 220px;
-  height: 220px;
-  img{
-    border-radius: 100%;
-    -ms-transform: rotate(90deg); /* IE 9 */
-    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
-    transform: rotate(90deg);
-  }
-}
-.caption_box{
-  width: 220px;
-  height: 220px;
-  border-radius: 100%;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  font-size: 12px;
-  visibility: hidden;
-  opacity: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  /* transition effect. not necessary */
-  transition: opacity .2s, visibility .2s;
-}
-.image_caption:hover .caption_box {
-  visibility: visible;
-  opacity: 1;
-  position: absolute;
-}
-.caption {
-  transition: .2s;
-  transform: translateY(1em);
-  margin-bottom: 0px;
-}
-
-.image_caption:hover .caption {
-  transform: translateY(0);
 }
 
 .underline {
+  // text-transform: uppercase;
   text-align: justify;
   max-width:960px;
   width:100%;
