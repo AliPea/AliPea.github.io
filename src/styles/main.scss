@@ -196,7 +196,7 @@ html {
 
 .user {
   text-align: center;
-  margin: 20px auto;
+  margin: 50px auto;
   font-size: 60px;
   p {
     font-size: 16px;
@@ -237,7 +237,7 @@ section#about {
   width:100%;
   padding: 10px 0px;
   a{
-    transition:all 1s linear;
+    // transition:all 1s;
     display:inline;
     color:$main;
     text-decoration:none;
@@ -253,33 +253,48 @@ section#about {
     }
   }
 }
-// ----- Technologies -----
+// ----- Tools, Frameworks -----
 .row.user{
-.four{
-    h4, i {
+div.four{
+  padding-bottom: 20px;
+  h4 {
+    margin-top: 5px;
+    margin-bottom:30px;
+    font-size: 28px;
+    i {
       &:hover{
-        opacity: 0.5;
+      opacity: 0.5;
       }
     }
-    p {
+  }
+  p {
     text-align: center;
-      }
-    }
+  }
+}
 }
 
 
 // ------- Projects------
-h4{
-  font-family: $f-title;
-  text-transform: uppercase;
-  font-size: 18px;
-  font-weight: 400;
-}
+// h4{
+//   font-family: $f-title;
+//   text-transform: uppercase;
+//   font-size: 18px;
+//   font-weight: 400;
+// }
+
 h3{
   text-align: center;
 }
-.three {
+.six {
+  position: relative;
   text-align: left;
+  img{
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 15px;
+  }
 }
 
 .project-link {
@@ -299,16 +314,16 @@ h3{
   background-color 0.3s ease-out,
   border-color 0.3s ease-out;
   &:hover {
-    background-color: $purple;
-    border-color: $purple;
-    color: #fff;
-    transition: color 0.3s ease-in,
-    background-color 0.3s ease-in,
-    border-color 0.3s ease-in;
-  }
-  &:active {
     background-color: $main;
     border-color: $main;
+    color: #fff;
+    transition: color 0.2s ease-in,
+    background-color 0.2s ease-in,
+    border-color 0.2s ease-in;
+  }
+  &:active {
+    background-color: $purple;
+    border-color: $purple;
     color: #fff;
     transition: color 0.3s ease-in,
     background-color 0.3s ease-in,
@@ -320,6 +335,7 @@ h3{
 .footer {
   background-color: #FFF;
   overflow: hidden;
+  padding-top:50px;
   .four {
     padding: 0px;
     opacity: 0.8;
