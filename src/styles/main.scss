@@ -210,18 +210,15 @@ html {
 
 //-------About me---------
 section#about {
-  padding-top: 10px;
+  padding-top: 50px;
   text-align: justify;
 }
 
 .user-details.about {
   font-size: 16px;
-  margin: 0 auto;
-  position: relative;
-  padding: 10px 0px;
+  // margin: 0 auto;
+  // position: relative;
 }
-
-
 
 .image_caption {
   cursor: pointer;
@@ -229,28 +226,43 @@ section#about {
   text-align: -webkit-center;
   margin: 0 auto;
   display: block;
-  width: 220px;
+  // padding-top: 18px;
+  img{
+    width: 100%;
+    height: auto;
+  }
+}
+.six.notUnderlined{
+  // padding-top: 10px;
 }
 
 .notUnderlined {
   // text-transform: uppercase;
-  text-align: justify;
+  h3{
+    text-align: left;
+    @media only screen and (max-width: 550px)  {
+      text-align: center;
+    }
+  }
+  p{
+    margin-bottom: 10px;
+    text-align: left;
+    @media only screen and (max-width: 550px)  {
+      text-align: justify;
+    }
+  }
   max-width:960px;
   width:100%;
-  padding: 10px 0px;
-  &:hover{
-    text-decoration: underline;
-  }
 }
 
 .underline {
   // text-transform: uppercase;
-  text-align: justify;
+  // text-align: justify;
   max-width:960px;
   width:100%;
   padding: 10px 0px;
   a{
-    transition:all 1s linear;
+    transition:all 0.5s ease;
     display:inline;
     color:$main;
     text-decoration:none;
@@ -267,24 +279,24 @@ section#about {
   }
 }
 // ----- Tools, Frameworks -----
-.row.user{
-div.four{
-  padding-bottom: 20px;
-  h4 {
-    margin-top: 5px;
-    margin-bottom:30px;
-    font-size: 28px;
-    i {
-      &:hover{
-      opacity: 0.5;
-      }
-    }
-  }
-  p {
-    text-align: center;
-  }
-}
-}
+// .row.user{
+// div.four{
+//   padding-bottom: 20px;
+//   h4 {
+//     margin-top: 5px;
+//     margin-bottom:30px;
+//     font-size: 28px;
+//     i {
+//       &:hover{
+//       opacity: 0.5;
+//       }
+//     }
+//   }
+//   p {
+//     text-align: center;
+//   }
+// }
+// }
 
 
 // ------- Projects------
@@ -301,6 +313,9 @@ h3{
 .six {
   position: relative;
   text-align: left;
+  @media only screen and (max-width: 550px)  {
+    text-align: justify;
+  }
   img{
     position: relative;
     margin: 0 auto;
