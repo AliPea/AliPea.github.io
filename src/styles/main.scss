@@ -211,14 +211,14 @@ html {
 //-------About me---------
 section#about {
   padding-top: 10px;
-  text-align: -webkit-center;
+  text-align: justify;
 }
 
 .user-details.about {
   font-size: 16px;
   margin: 0 auto;
   position: relative;
-  padding: 20px;
+  padding: 10px 0px;
 }
 
 
@@ -226,8 +226,21 @@ section#about {
 .image_caption {
   cursor: pointer;
   position: relative;
-  // overflow: hidden;
+  text-align: -webkit-center;
+  margin: 0 auto;
+  display: block;
   width: 220px;
+}
+
+.notUnderlined {
+  // text-transform: uppercase;
+  text-align: justify;
+  max-width:960px;
+  width:100%;
+  padding: 10px 0px;
+  &:hover{
+    text-decoration: underline;
+  }
 }
 
 .underline {
@@ -237,7 +250,7 @@ section#about {
   width:100%;
   padding: 10px 0px;
   a{
-    // transition:all 1s;
+    transition:all 1s linear;
     display:inline;
     color:$main;
     text-decoration:none;
@@ -337,7 +350,7 @@ h3{
   overflow: hidden;
   padding-top:50px;
   .four {
-    padding: 0px;
+    padding-bottom: 10px;
     opacity: 0.8;
     font-family: $f-body;
     font-weight: 500;
