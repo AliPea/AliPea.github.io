@@ -26,7 +26,6 @@ html {
     height: 100%;
 }
 
-
 @-webkit-keyframes pulse {
   from {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
@@ -220,16 +219,18 @@ section#about {
   // position: relative;
 }
 
-.image_caption {
+.six.image_caption {
   cursor: pointer;
   position: relative;
   text-align: -webkit-center;
   margin: 0 auto;
   display: block;
   // padding-top: 18px;
-  img{
+  img.pic{
     width: 100%;
     height: auto;
+    border-radius: 50%;
+    overflow: hidden;
   }
 }
 .six.notUnderlined{
