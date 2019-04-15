@@ -1,11 +1,11 @@
 # Site settings
-title: Alicia Morales Pearse
-description: Web Developer
+title: Alicia
+description: Software Developer
 # baseurl: "/alipea" # the subpath of your site, e.g. /blog
 # url: "http://aliciapearse.com" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
-username: Alicia Morales Pearse
+username: Alicia Pearse
 user_description:
 user_title: Software Developer
 email: hello@aliciapearse.com
