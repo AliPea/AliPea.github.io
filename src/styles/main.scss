@@ -220,17 +220,17 @@ section#about {
 }
 
 .six.image_caption {
-  cursor: pointer;
-  position: relative;
-  text-align: -webkit-center;
-  margin: 0 auto;
-  display: block;
-  // padding-top: 18px;
   img.pic{
     width: 100%;
     height: auto;
-    border-radius: 50%;
-    overflow: hidden;
+    border-radius: 100%
+     // overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    text-align: -webkit-center;
+    margin: 0 auto;
+    display: block;
+    padding-top: 18px;
   }
 }
 .six.notUnderlined{
