@@ -113,7 +113,7 @@ body {
     }
   }
   .site-description {
-    font-family: $f-body;
+    font-family: $f-brand;
     font-size: 20px;
     display: block;
     line-height: 1;
@@ -425,10 +425,4 @@ a {
   &:active {
     color: $main;
   }
-}
-
-section#blog{
-  padding-top: 50px;
-  text-align: justify;
-  background-color: red;
 }
