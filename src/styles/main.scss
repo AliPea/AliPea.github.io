@@ -367,7 +367,7 @@ h3{
   }
 }
 
-// Footer
+// -------------- Footer -----------------
 .footer {
   background-color: #FFF;
   overflow: hidden;
@@ -375,11 +375,11 @@ h3{
   .four {
     padding-bottom: 10px;
     opacity: 0.8;
-    font-family: $f-body;
+    font-family: $f-brand;
     font-weight: 500;
     margin-bottom: 10px;
     h1, p {
-      font-family: $f-title;
+      font-family: $f-brand;
       text-align: right;
       color: $main;
       a {
@@ -414,9 +414,11 @@ h3{
     }
   }
 }
-ul{
-      margin-bottom: 1rem;
+
+ul {
+  margin-bottom: 1rem;
 }
+
 a {
   color: $main;
   text-decoration: none;
