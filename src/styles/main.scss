@@ -223,11 +223,10 @@ section#about {
   // position: relative;
 }
 
-.six.image_caption {
-  img.pic{
+div.user-details.image_caption img.pic {
     width: 100%;
     height: auto;
-    border-radius: 100%
+    //border-radius: 100%
      // overflow: hidden;
     cursor: pointer;
     position: relative;
@@ -235,7 +234,6 @@ section#about {
     margin: 0 auto;
     display: block;
     padding-top: 18px;
-  }
 }
 .six.notUnderlined{
   // padding-top: 10px;
