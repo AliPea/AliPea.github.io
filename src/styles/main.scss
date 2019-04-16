@@ -223,18 +223,33 @@ section#about {
   // position: relative;
 }
 
-div.user-details.image_caption img.pic {
-    width: 100%;
-    height: auto;
-    //border-radius: 100%
-     // overflow: hidden;
-    cursor: pointer;
+div.six.user-details{
+  position: absolute;
+  div.image_caption{
     position: relative;
-    text-align: -webkit-center;
-    margin: 0 auto;
-    display: block;
-    padding-top: 18px;
+    img.pic{
+      position: absolute;
+      border-radius: 100px;
+    }
+  }
 }
+
+
+
+
+// div.user-details.image_caption img.pic {
+//     width: 100%;
+//     height: auto;
+//     //border-radius: 100%
+//      // overflow: hidden;
+//     cursor: pointer;
+//     position: relative;
+//     text-align: -webkit-center;
+//     margin: 0 auto;
+//     display: block;
+//     padding-top: 18px;
+// }
+
 .six.notUnderlined{
   // padding-top: 10px;
 }
