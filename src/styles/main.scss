@@ -151,11 +151,11 @@ body {
     transition: all .7s;
     &:hover {
       color: #d6ff0a;
-      background: #d6ff0a;
+      background: $main;
     }
     &:active {
       color: #d6ff0a;
-      background: #FFF;
+      background: $main;
     }
     @media only screen and (min-width:$cut) {
       width: 35px;
