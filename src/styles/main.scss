@@ -185,11 +185,11 @@ body {
     transform: translate(-50%, -50%);
     width: 100px;
     height: 100px;
-    fill: #fff;
+    fill: #d6ff0a;
     -webkit-animation: pulse 1.3s infinite;
     animation: pulse 1.3s infinite;
     &:hover {
-      color: $sec;
+      color: #d6ff0a;
     }
     &:active {
       color: $sec;
