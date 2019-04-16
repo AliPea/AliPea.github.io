@@ -150,12 +150,12 @@ body {
     border: 2px solid #FFF;
     transition: all .7s;
     &:hover {
-      color: $main;
+      color: #d6ff0a;
       background: #d6ff0a;
     }
     &:active {
-      color: $main;
-      background: #d6ff0a;
+      color: #d6ff0a;
+      background: #FFF;
     }
     @media only screen and (min-width:$cut) {
       width: 35px;
