@@ -99,7 +99,7 @@ body {
   margin: 0 auto;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  h1 span.site-title{
+  .site-title{
     font-family: $f-brand;
     font-size: 50px;
     font-weight:900;
@@ -379,7 +379,6 @@ h3{
     font-weight: 500;
     margin-bottom: 10px;
     h1, p {
-      font-size: 30px;
       font-family: $f-brand;
       text-align: right;
       color: $main;
