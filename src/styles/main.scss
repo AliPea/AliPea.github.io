@@ -223,19 +223,13 @@ section#about {
   // position: relative;
 }
 
-div.six.user-details{
+.six.user-details.about{
   position: absolute;
-  div.image_caption{
-    position: relative;
-    img.pic{
-      position: absolute;
+    img {
+      position: relative;
       border-radius: 100px;
     }
-  }
 }
-
-
-
 
 // div.user-details.image_caption img.pic {
 //     width: 100%;
