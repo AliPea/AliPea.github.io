@@ -30,8 +30,6 @@ body {
   overflow: auto;
 }
 
-
-
 @-webkit-keyframes pulse {
   from {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
@@ -101,6 +99,9 @@ body {
   margin: 0 auto;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  h1{
+    font-family: $f-brand;
+  }
   .site-title {
     font-family: $f-brand;
     font-size: 50px;
