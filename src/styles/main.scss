@@ -9,8 +9,9 @@ $f-body:'Open Sans', sans-serif;
 $f-alt:'Montserrat', sans-serif;
 $f-brand: 'Oswald', sans-serif;
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 
 * {
   margin: 0;
@@ -121,7 +122,7 @@ body {
     }
   }
   .link {
-    font-family: $f-body;
+    font-family: $f-brand;
     color: #FFF;
     display: inline-flex;
     justify-content: space-between;
