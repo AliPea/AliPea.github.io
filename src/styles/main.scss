@@ -225,6 +225,7 @@ section#about {
   margin-top:100px;
 }
 .six img {
+    margin-top: 90px;
     position: relative;
     border-radius: 100%;
     display: block;
@@ -326,10 +327,9 @@ h3{
     text-align: justify;
   }
   img{
-    border-radius: 100%;
+    // border-radius: 100%;
     position: relative;
     margin: 0 auto;
-    margin-top:100px;
     display: block;
     padding-top: 20px;
     padding-bottom: 15px;
