@@ -1,5 +1,5 @@
 
-$main: #D6FF0A;
+$main: #272727;
 $sec: #4B5664;
 $purple: #54516A;
 $pink: #EEE5E9;
@@ -7,8 +7,10 @@ $cut: 768px;
 $f-title:'Roboto', sans-serif;
 $f-body:'Open Sans', sans-serif;
 $f-alt:'Montserrat', sans-serif;
+$f-brand: 'Oswald', sans-serif;
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
 
 * {
   margin: 0;
